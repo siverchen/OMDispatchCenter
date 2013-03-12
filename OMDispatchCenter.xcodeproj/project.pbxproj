@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD859B316EEEB9000822D20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD859B216EEEB9000822D20 /* UIKit.framework */; };
+		BCD859B516EEEB9000822D20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD859B416EEEB9000822D20 /* Foundation.framework */; };
+		BCD859B716EEEB9000822D20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD859B616EEEB9000822D20 /* CoreGraphics.framework */; };
+		BCD859BD16EEEB9000822D20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCD859BB16EEEB9000822D20 /* InfoPlist.strings */; };
+		BCD859BF16EEEB9000822D20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD859BE16EEEB9000822D20 /* main.m */; };
+		BCD859C316EEEB9000822D20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD859C216EEEB9000822D20 /* AppDelegate.m */; };
+		BCD859C516EEEB9000822D20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD859C416EEEB9000822D20 /* Default.png */; };
+		BCD859C716EEEB9100822D20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD859C616EEEB9100822D20 /* Default@2x.png */; };
+		BCD859C916EEEB9100822D20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD859C816EEEB9100822D20 /* Default-568h@2x.png */; };
+		BCD859D116EEEBB200822D20 /* OMDispatchCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD859D016EEEBB200822D20 /* OMDispatchCenter.m */; };
+		BCD859DF16EEF1F300822D20 /* OMRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD859DE16EEF1F300822D20 /* OMRequester.m */; };
+		BCD85A5216EF03DA00822D20 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85A5116EF03DA00822D20 /* CFNetwork.framework */; };
+		BCD85A5416EF040100822D20 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85A5316EF040100822D20 /* SystemConfiguration.framework */; };
+		BCD85A5816EF042200822D20 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85A5716EF042200822D20 /* MobileCoreServices.framework */; };
+		BCD85A5A16EF042A00822D20 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85A5916EF042900822D20 /* libz.dylib */; };
+		BCD85AB516EF06A100822D20 /* OMBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85AB016EF06A000822D20 /* OMBase.m */; };
+		BCD85AB816EF0C6F00822D20 /* OMSong.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85AB416EF06A000822D20 /* OMSong.m */; };
+		BCD85ABD16EF18F800822D20 /* OMDBController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85ABC16EF18F800822D20 /* OMDBController.m */; };
+		BCD85AD216EF1C3100822D20 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85AD116EF1C3100822D20 /* libsqlite3.dylib */; };
+		BCD85AD716EF212700822D20 /* OMRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85AD616EF210800822D20 /* OMRequestHelper.m */; };
+		BCD85ADA16EF353300822D20 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85AD916EF351C00822D20 /* JSONKit.m */; };
+		BCD85ADD16EF359B00822D20 /* NSString+More.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD85ADC16EF358600822D20 /* NSString+More.m */; };
+		BCD85ADF16EF36AD00822D20 /* infomap.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCD85ADE16EF36AD00822D20 /* infomap.plist */; };
+		BCD85BED16EF520D00822D20 /* OMDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85BEC16EF520D00822D20 /* OMDownloader.framework */; };
+		BCD85BEF16EF521100822D20 /* ASIHTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85BEE16EF521100822D20 /* ASIHTTPRequest.framework */; };
+		BCD85C0D16EF533900822D20 /* OMDBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD85AB916EF186700822D20 /* OMDBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD85C1016EF53AF00822D20 /* OMDBManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD85C0F16EF53AF00822D20 /* OMDBManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCD859AF16EEEB9000822D20 /* OMDispatchCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDispatchCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD859B216EEEB9000822D20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCD859B416EEEB9000822D20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BCD859B616EEEB9000822D20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCD859BA16EEEB9000822D20 /* OMDispatchCenter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OMDispatchCenter-Info.plist"; sourceTree = "<group>"; };
+		BCD859BC16EEEB9000822D20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCD859BE16EEEB9000822D20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCD859C016EEEB9000822D20 /* OMDispatchCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMDispatchCenter-Prefix.pch"; sourceTree = "<group>"; };
+		BCD859C116EEEB9000822D20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCD859C216EEEB9000822D20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCD859C416EEEB9000822D20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BCD859C616EEEB9100822D20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BCD859C816EEEB9100822D20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BCD859CF16EEEBB200822D20 /* OMDispatchCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMDispatchCenter.h; sourceTree = "<group>"; };
+		BCD859D016EEEBB200822D20 /* OMDispatchCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMDispatchCenter.m; sourceTree = "<group>"; };
+		BCD859D816EEED7100822D20 /* OMPlayActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPlayActions.h; sourceTree = "<group>"; };
+		BCD859D916EEEF0500822D20 /* OMDownloadActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMDownloadActions.h; sourceTree = "<group>"; };
+		BCD859DD16EEF1F300822D20 /* OMRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMRequester.h; sourceTree = "<group>"; };
+		BCD859DE16EEF1F300822D20 /* OMRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMRequester.m; sourceTree = "<group>"; };
+		BCD85A5116EF03DA00822D20 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BCD85A5316EF040100822D20 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BCD85A5516EF040A00822D20 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BCD85A5716EF042200822D20 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BCD85A5916EF042900822D20 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BCD85AAF16EF06A000822D20 /* OMBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMBase.h; sourceTree = "<group>"; };
+		BCD85AB016EF06A000822D20 /* OMBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMBase.m; sourceTree = "<group>"; };
+		BCD85AB316EF06A000822D20 /* OMSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMSong.h; sourceTree = "<group>"; };
+		BCD85AB416EF06A000822D20 /* OMSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMSong.m; sourceTree = "<group>"; };
+		BCD85AB916EF186700822D20 /* OMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMDBManager.h; sourceTree = "<group>"; };
+		BCD85ABB16EF18F800822D20 /* OMDBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMDBController.h; sourceTree = "<group>"; };
+		BCD85ABC16EF18F800822D20 /* OMDBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMDBController.m; sourceTree = "<group>"; };
+		BCD85AD116EF1C3100822D20 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BCD85AD516EF210800822D20 /* OMRequestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMRequestHelper.h; sourceTree = "<group>"; };
+		BCD85AD616EF210800822D20 /* OMRequestHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMRequestHelper.m; sourceTree = "<group>"; };
+		BCD85AD816EF351C00822D20 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		BCD85AD916EF351C00822D20 /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		BCD85ADB16EF358600822D20 /* NSString+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+More.h"; sourceTree = "<group>"; };
+		BCD85ADC16EF358600822D20 /* NSString+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+More.m"; sourceTree = "<group>"; };
+		BCD85ADE16EF36AD00822D20 /* infomap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = infomap.plist; path = ../../../Desktop/OMusic1.0.2/OMusic/Resources/plists/infomap.plist; sourceTree = "<group>"; };
+		BCD85AE516EF44CD00822D20 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BCD85BEC16EF520D00822D20 /* OMDownloader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMDownloader.framework; path = ../../../iOS/app/IOS/libs/common/Downloader/OMDownloader.framework; sourceTree = "<group>"; };
+		BCD85BEE16EF521100822D20 /* ASIHTTPRequest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASIHTTPRequest.framework; path = ../../../iOS/app/IOS/libs/common/ASIHttpRequest/ASIHTTPRequest.framework; sourceTree = "<group>"; };
+		BCD85BF416EF52B800822D20 /* OMDBManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMDBManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD85C0F16EF53AF00822D20 /* OMDBManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMDBManager.framework; path = ../../../iOS/app/IOS/libs/common/OMDBManager/OMDBManager.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCD859AC16EEEB9000822D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD85AD216EF1C3100822D20 /* libsqlite3.dylib in Frameworks */,
+				BCD85A5A16EF042A00822D20 /* libz.dylib in Frameworks */,
+				BCD85A5816EF042200822D20 /* MobileCoreServices.framework in Frameworks */,
+				BCD85A5416EF040100822D20 /* SystemConfiguration.framework in Frameworks */,
+				BCD85A5216EF03DA00822D20 /* CFNetwork.framework in Frameworks */,
+				BCD859B316EEEB9000822D20 /* UIKit.framework in Frameworks */,
+				BCD859B516EEEB9000822D20 /* Foundation.framework in Frameworks */,
+				BCD859B716EEEB9000822D20 /* CoreGraphics.framework in Frameworks */,
+				BCD85BED16EF520D00822D20 /* OMDownloader.framework in Frameworks */,
+				BCD85BEF16EF521100822D20 /* ASIHTTPRequest.framework in Frameworks */,
+				BCD85C1016EF53AF00822D20 /* OMDBManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD85BF116EF52B800822D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCD859A616EEEB9000822D20 = {
+			isa = PBXGroup;
+			children = (
+				BCD85AD816EF351C00822D20 /* JSONKit.h */,
+				BCD85AD916EF351C00822D20 /* JSONKit.m */,
+				BCD85ADE16EF36AD00822D20 /* infomap.plist */,
+				BCD85ADB16EF358600822D20 /* NSString+More.h */,
+				BCD85ADC16EF358600822D20 /* NSString+More.m */,
+				BCD85AD516EF210800822D20 /* OMRequestHelper.h */,
+				BCD85AD616EF210800822D20 /* OMRequestHelper.m */,
+				BCD85ABB16EF18F800822D20 /* OMDBController.h */,
+				BCD85ABC16EF18F800822D20 /* OMDBController.m */,
+				BCD85AB916EF186700822D20 /* OMDBManager.h */,
+				BCD85AAF16EF06A000822D20 /* OMBase.h */,
+				BCD85AB016EF06A000822D20 /* OMBase.m */,
+				BCD85AB316EF06A000822D20 /* OMSong.h */,
+				BCD85AB416EF06A000822D20 /* OMSong.m */,
+				BCD859B816EEEB9000822D20 /* OMDispatchCenter */,
+				BCD859B116EEEB9000822D20 /* Frameworks */,
+				BCD859B016EEEB9000822D20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCD859B016EEEB9000822D20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD859AF16EEEB9000822D20 /* OMDispatchCenter.app */,
+				BCD85BF416EF52B800822D20 /* OMDBManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD859B116EEEB9000822D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD85C0F16EF53AF00822D20 /* OMDBManager.framework */,
+				BCD85BEE16EF521100822D20 /* ASIHTTPRequest.framework */,
+				BCD85BEC16EF520D00822D20 /* OMDownloader.framework */,
+				BCD85AD116EF1C3100822D20 /* libsqlite3.dylib */,
+				BCD85A5916EF042900822D20 /* libz.dylib */,
+				BCD85A5716EF042200822D20 /* MobileCoreServices.framework */,
+				BCD85A5516EF040A00822D20 /* Security.framework */,
+				BCD85A5316EF040100822D20 /* SystemConfiguration.framework */,
+				BCD85A5116EF03DA00822D20 /* CFNetwork.framework */,
+				BCD859B216EEEB9000822D20 /* UIKit.framework */,
+				BCD859B416EEEB9000822D20 /* Foundation.framework */,
+				BCD859B616EEEB9000822D20 /* CoreGraphics.framework */,
+				BCD85AE516EF44CD00822D20 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD859B816EEEB9000822D20 /* OMDispatchCenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCD859CF16EEEBB200822D20 /* OMDispatchCenter.h */,
+				BCD859D016EEEBB200822D20 /* OMDispatchCenter.m */,
+				BCD859C116EEEB9000822D20 /* AppDelegate.h */,
+				BCD859C216EEEB9000822D20 /* AppDelegate.m */,
+				BCD859B916EEEB9000822D20 /* Supporting Files */,
+				BCD859D816EEED7100822D20 /* OMPlayActions.h */,
+				BCD859D916EEEF0500822D20 /* OMDownloadActions.h */,
+				BCD859DD16EEF1F300822D20 /* OMRequester.h */,
+				BCD859DE16EEF1F300822D20 /* OMRequester.m */,
+			);
+			path = OMDispatchCenter;
+			sourceTree = "<group>";
+		};
+		BCD859B916EEEB9000822D20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCD859BA16EEEB9000822D20 /* OMDispatchCenter-Info.plist */,
+				BCD859BB16EEEB9000822D20 /* InfoPlist.strings */,
+				BCD859BE16EEEB9000822D20 /* main.m */,
+				BCD859C016EEEB9000822D20 /* OMDispatchCenter-Prefix.pch */,
+				BCD859C416EEEB9000822D20 /* Default.png */,
+				BCD859C616EEEB9100822D20 /* Default@2x.png */,
+				BCD859C816EEEB9100822D20 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCD85C0C16EF532F00822D20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD85C0D16EF533900822D20 /* OMDBManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCD859AE16EEEB9000822D20 /* OMDispatchCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD859CC16EEEB9100822D20 /* Build configuration list for PBXNativeTarget "OMDispatchCenter" */;
+			buildPhases = (
+				BCD859AB16EEEB9000822D20 /* Sources */,
+				BCD859AC16EEEB9000822D20 /* Frameworks */,
+				BCD859AD16EEEB9000822D20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMDispatchCenter;
+			productName = OMDispatchCenter;
+			productReference = BCD859AF16EEEB9000822D20 /* OMDispatchCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCD85BF316EF52B800822D20 /* OMDBManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD85BFD16EF52B800822D20 /* Build configuration list for PBXNativeTarget "OMDBManager" */;
+			buildPhases = (
+				BCD85BF016EF52B800822D20 /* Sources */,
+				BCD85BF116EF52B800822D20 /* Frameworks */,
+				BCD85BF216EF52B800822D20 /* Resources */,
+				BCD85C0C16EF532F00822D20 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMDBManager;
+			productName = OMDBManager;
+			productReference = BCD85BF416EF52B800822D20 /* OMDBManager.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD859A716EEEB9000822D20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cmc;
+			};
+			buildConfigurationList = BCD859AA16EEEB9000822D20 /* Build configuration list for PBXProject "OMDispatchCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCD859A616EEEB9000822D20;
+			productRefGroup = BCD859B016EEEB9000822D20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCD859AE16EEEB9000822D20 /* OMDispatchCenter */,
+				BCD85BF316EF52B800822D20 /* OMDBManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCD859AD16EEEB9000822D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD859BD16EEEB9000822D20 /* InfoPlist.strings in Resources */,
+				BCD859C516EEEB9000822D20 /* Default.png in Resources */,
+				BCD859C716EEEB9100822D20 /* Default@2x.png in Resources */,
+				BCD859C916EEEB9100822D20 /* Default-568h@2x.png in Resources */,
+				BCD85ADF16EF36AD00822D20 /* infomap.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD85BF216EF52B800822D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCD859AB16EEEB9000822D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD85ADD16EF359B00822D20 /* NSString+More.m in Sources */,
+				BCD85ADA16EF353300822D20 /* JSONKit.m in Sources */,
+				BCD85AD716EF212700822D20 /* OMRequestHelper.m in Sources */,
+				BCD85AB816EF0C6F00822D20 /* OMSong.m in Sources */,
+				BCD859BF16EEEB9000822D20 /* main.m in Sources */,
+				BCD859C316EEEB9000822D20 /* AppDelegate.m in Sources */,
+				BCD859D116EEEBB200822D20 /* OMDispatchCenter.m in Sources */,
+				BCD859DF16EEF1F300822D20 /* OMRequester.m in Sources */,
+				BCD85AB516EF06A100822D20 /* OMBase.m in Sources */,
+				BCD85ABD16EF18F800822D20 /* OMDBController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD85BF016EF52B800822D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCD859BB16EEEB9000822D20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD859BC16EEEB9000822D20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCD859CA16EEEB9100822D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCD859CB16EEEB9100822D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCD859CD16EEEB9100822D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/OMDispatchCenter-bvulngetiovvamdgqjtouvevlwur/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/ASIHttpRequest\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/Downloader\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/OMDBManager\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMDispatchCenter/OMDispatchCenter-Prefix.pch";
+				INFOPLIST_FILE = "OMDispatchCenter/OMDispatchCenter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/ASIHttpRequest\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/Downloader\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BCD859CE16EEEB9100822D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/OMDispatchCenter-bvulngetiovvamdgqjtouvevlwur/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/ASIHttpRequest\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/Downloader\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/OMDBManager\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMDispatchCenter/OMDispatchCenter-Prefix.pch";
+				INFOPLIST_FILE = "OMDispatchCenter/OMDispatchCenter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/ASIHttpRequest\"",
+					"\"$(SRCROOT)/../../../iOS/app/IOS/libs/common/Downloader\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BCD85BFE16EF52B800822D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMDBManager/OMDBManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "OMDBManager/OMDBManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BCD85BFF16EF52B800822D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMDBManager/OMDBManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "OMDBManager/OMDBManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCD859AA16EEEB9000822D20 /* Build configuration list for PBXProject "OMDispatchCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD859CA16EEEB9100822D20 /* Debug */,
+				BCD859CB16EEEB9100822D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD859CC16EEEB9100822D20 /* Build configuration list for PBXNativeTarget "OMDispatchCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD859CD16EEEB9100822D20 /* Debug */,
+				BCD859CE16EEEB9100822D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCD85BFD16EF52B800822D20 /* Build configuration list for PBXNativeTarget "OMDBManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD85BFE16EF52B800822D20 /* Debug */,
+				BCD85BFF16EF52B800822D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD859A716EEEB9000822D20 /* Project object */;
+}
